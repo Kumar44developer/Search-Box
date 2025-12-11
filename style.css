@@ -33,6 +33,8 @@ body{
     background-color: #fff;
     border: 0;
     cursor: pointer;
+    position: absolute;
+    top: 0;
 
 
 
