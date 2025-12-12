@@ -52,6 +52,9 @@ body{
     background-color: royalblue;
 }
 
+.button.active{
+    margin-left: 0.5rem;
+}
 
 
 
