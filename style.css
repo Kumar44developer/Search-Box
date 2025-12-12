@@ -49,6 +49,8 @@ body{
 
 .container.active .button{
     transform: translateX(198px);
+    background-color: royalblue;
+}
 
 
 
