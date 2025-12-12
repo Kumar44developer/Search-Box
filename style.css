@@ -47,6 +47,8 @@ body{
     width: 200px;
 }
 
+.container.active .button{
+    transform: translateX(198px);
 
 
 
