@@ -43,7 +43,9 @@ body{
     border-radius: 5px;
 }
 
-
+.container.active .search{
+    width: 200px;
+}
 
 
 
