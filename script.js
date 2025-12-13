@@ -16,3 +16,7 @@ button.addEventListener("click",()=>{
         serachIcon.style.opacity = 1;
         crossIcon.style.opacity = 0;
     }
+
+    input.focus();
+
+});
