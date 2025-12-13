@@ -8,4 +8,7 @@ button.addEventListener("click",()=>{
   container.classList.toggle("active");
   button.classList.toggle("active");
 
-  if(container.classList.contains("active")){                       
+  if(container.classList.contains("active")){     
+    serachIcon.style.opacity = 0;
+        crossIcon.style.opacity = 1;
+    }
