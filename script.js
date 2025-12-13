@@ -12,3 +12,7 @@ button.addEventListener("click",()=>{
     serachIcon.style.opacity = 0;
         crossIcon.style.opacity = 1;
     }
+  else{
+        serachIcon.style.opacity = 1;
+        crossIcon.style.opacity = 0;
+    }
