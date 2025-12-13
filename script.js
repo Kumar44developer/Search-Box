@@ -6,3 +6,4 @@ const crossIcon = document.querySelector(".fa-times");
 
 button.addEventListener("click",()=>{
   container.classList.toggle("active");
+  button.classList.toggle("active");
