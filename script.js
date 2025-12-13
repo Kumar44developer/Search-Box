@@ -5,4 +5,4 @@ const serachIcon = document.querySelector(".fa-search");
 const crossIcon = document.querySelector(".fa-times");
 
 button.addEventListener("click",()=>{
-  
+  container.classList.toggle("active");
