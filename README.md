@@ -30,10 +30,10 @@ A modern, animated expanding search component built with vanilla HTML, CSS, and 
 
 ```
 Search-Box/
-├── index.html       # Markup structure for container, input, and icon button
-├── style.css        # Layout, pill styling, expansion transitions, and icon rotation
-├── script.js        # Event handling for expansion, active toggling, and auto-focus
-└── README.md        # Project documentation
+├── index.html      
+├── style.css       
+├── script.js        
+└── README.md        
 ```
 
 ---
