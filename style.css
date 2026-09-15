@@ -1,80 +1,89 @@
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-     padding: 0;
-    font-family: sans-serif;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-      background-color: palevioletred;
+    background-color: #d87093;
 }
-.container{
+
+.container {
     position: relative;
-      height: 50px;
+    height: 60px;
 }
-.search{
- 
+
+.search {
     outline: none;
     background-color: #fff;
     border: 0;
-    height: 70px;
-    width: 70px;
-     padding: 15px;
-    font-size: 1rem;
-     transition: width 0.5s ease;
-    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    color: #333;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.button{
+.button {
     background-color: #fff;
     border: 0;
     cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
-    height: 70px;
-    width: 70px;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
     outline: none;
-    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease, color 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
 
-.container.active .search{
-    width: 200px;
-}
-
-.container.active .button{
-    transform: translateX(198px);
-    background-color: royalblue;
-}
-
-.button.active{
-    margin-left: 0.5rem;
-}
-
-.fa-times{
-    opacity: 0;
+.button i {
     position: absolute;
-    left: 50%;
-     top: 50%;
-    transform: translate(-50%,-50%);
+    font-size: 1.3rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.fa-times.active{
+.fa-times {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+.fa-search {
     opacity: 1;
+    transform: rotate(0deg);
 }
 
+.container.active .search {
+    width: 320px;
+    padding-right: 70px;
+}
 
+.container.active .button {
+    transform: translateX(260px);
+    background-color: #4169e1;
+    color: #fff;
+}
 
+.container.active .fa-search {
+    opacity: 0;
+    transform: rotate(90deg);
+}
 
-
-
-
-
-
-
-
+.container.active .fa-times {
+    opacity: 1;
+    transform: rotate(0deg);
+}
